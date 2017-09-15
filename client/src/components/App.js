@@ -4,7 +4,7 @@ import NavBar from './NavBar';
 import Login from './Login';
 import Register from './Register';
 import Flash from './Flash';
-import Home from './Home';
+import Home from './Home/Home';
 import ProtectedRoute from './ProtectedRoute';
 import { Switch, Route } from 'react-router-dom';
 import FetchUser from './FetchUser';
