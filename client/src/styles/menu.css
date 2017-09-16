@@ -1,0 +1,63 @@
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-page-title {
+  padding: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-header {
+  font-size: 72px;
+}
+
+.menu-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-category {
+  height: 500px;
+  width: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.menu-category-title {
+  font-size: 62px;
+  text-shadow: 2px 2px black;
+}
+
+.grid-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#dinner {
+  background-image: url('../images/dinner.jpg');
+}
+
+#drinks {
+  background-image: url('../images/orange_drink.jpg');
+}
+
+#happy-hour {
+  background-image: url('../images/happy_hour.jpg');
+}
