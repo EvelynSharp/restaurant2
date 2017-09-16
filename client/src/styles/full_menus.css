@@ -1,0 +1,15 @@
+.full-menu-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.basic-menu {
+  height: 80vh;
+  width: 75vh;
+  border: 1px solid black;
+  background-color: green;
+}
