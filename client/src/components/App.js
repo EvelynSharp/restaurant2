@@ -8,11 +8,22 @@ import Home from './Home/Home';
 import ProtectedRoute from './ProtectedRoute';
 import { Switch, Route } from 'react-router-dom';
 import FetchUser from './FetchUser';
+import glamorous from 'glamorous';
+
+
+const Parallax = glamorous.div({
+  height: '100vh',
+  // width: '100vw',
+  overflowX: 'hidden',
+  overflowY: 'auto',
+  perspective: '1px',
+  border: '1px solid black',
+})
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <Parallax>
         <NavBar />
         <Flash />
         <FetchUser>
@@ -23,7 +34,7 @@ class App extends Component {
             <Route component={NoMatch} />
           </Switch>
         </FetchUser>
-      </div>
+      </Parallax>
     );
   }
 }
