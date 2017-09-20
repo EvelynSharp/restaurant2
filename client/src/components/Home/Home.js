@@ -31,6 +31,12 @@ const LayerBack = glamorous.div(ParallaxLayer, {
   border: '1px solid blue',
 })
 
+const BGImage = glamorous.div({
+  border: '1px solid yellow',
+  height: '100vh',
+  backgroundSize: 'cover',
+})
+
 class Home extends Component {
 
   render() {
@@ -38,14 +44,16 @@ class Home extends Component {
     return(
         <div>
           <LayerBack >
-            <div style={{border:'1px solid yellow', height: '100vh', backgroundImage: `url(${home1})`}}>
+            <BGImage style={{backgroundImage: `url(${home1})`}}>
               This is the background
-            </div>
+            </BGImage>
           </LayerBack>
 
           <LayerBase >
-            <div style={{border:'1px solid yellow'}}>
-              This is the foreground
+            <div style={{height:'50vh', background: 'white'}}>
+              <div style={{border:'1px solid yellow'}}>
+                This is the foreground
+              </div>
             </div>
           </LayerBase>
         </div>
