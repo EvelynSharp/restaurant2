@@ -22,20 +22,24 @@ const ParallaxLayer = {
 
 const LayerBase = glamorous.div(ParallaxLayer, {
   transform: 'translateZ(0) scale(1)',
-  border: '1px solid red',
   padding: '100vh 0',
 })
 
 const LayerBack = glamorous.div(ParallaxLayer, {
-  transform: 'translateZ(-1px) scale(2)',
-  border: '1px solid blue',
+  transform: 'translateZ(-0.5px) scale(1.5)',
 })
 
 const BGImage = glamorous.div({
-  border: '1px solid yellow',
   height: '100vh',
   backgroundSize: 'cover',
 })
+
+const ParallaxGroup = glamorous.div({
+  height: '100vh',
+  position: 'relative',
+  transformStyle: 'preserve-3d',
+})
+
 
 class Home extends Component {
 
@@ -43,19 +47,37 @@ class Home extends Component {
 
     return(
         <div>
-          <LayerBack >
-            <BGImage style={{backgroundImage: `url(${home1})`}}>
-              This is the background
-            </BGImage>
-          </LayerBack>
+          <ParallaxGroup style={{ zIndex: '10'}}>
+            <LayerBack >
+              <BGImage style={{backgroundImage: `url(${home1})`}}>
+                This is the background
+              </BGImage>
+            </LayerBack>
 
-          <LayerBase >
-            <div style={{height:'50vh', background: 'white'}}>
-              <div style={{border:'1px solid yellow'}}>
-                This is the foreground
+            <LayerBase>
+              <div style={{height:'50vh', background: 'white'}}>
+                <div >
+                  This is the foreground
+                </div>
               </div>
-            </div>
-          </LayerBase>
+            </LayerBase>
+          </ParallaxGroup>
+
+          <ParallaxGroup style={{ border: '1px solid black', height: '100vh', marginTop: '30vh'}}>
+            <LayerBack >
+              <BGImage style={{backgroundImage: `url(${home2})`}}>
+                This is the background
+              </BGImage>
+            </LayerBack>
+
+            <LayerBase style={{ paddingTop: '80vh'}}>
+              <div style={{height:'50vh', width: '100vw', background: 'white'}}>
+                <div style={{ border: '1px solid yellow'}}>
+                  This is the foreground
+                </div>
+              </div>
+            </LayerBase>
+          </ParallaxGroup>
         </div>
 
     );
