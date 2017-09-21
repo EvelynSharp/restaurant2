@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Header } from 'semantic-ui-react';
+import { ParallaxLayer, ParallaxGroup, } from '../../styles/style-index';
 import home1 from '../../images/home1.jpeg';
 import home2 from '../../images/home2.jpeg';
 import glamorous from 'glamorous';
@@ -10,15 +11,6 @@ const HeaderMain = glamorous.h1({
   fontSize: '3em',
   paddingTop: '1em !important',
 })
-
-const ParallaxLayer = {
-  position: 'absolute',
-  textAlign: 'center',
-  top: '0',
-  right: '0',
-  bottom: '0',
-  left: '0',
-}
 
 const LayerBase = glamorous.div(ParallaxLayer, {
   transform: 'translateZ(0) scale(1)',
@@ -33,13 +25,6 @@ const BGImage = glamorous.div({
   height: '100vh',
   backgroundSize: 'cover',
 })
-
-const ParallaxGroup = glamorous.div({
-  height: '100vh',
-  position: 'relative',
-  transformStyle: 'preserve-3d',
-})
-
 
 class Home extends Component {
 

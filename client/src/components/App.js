@@ -5,6 +5,7 @@ import Login from './Login';
 import Register from './Register';
 import Flash from './Flash';
 import Home from './Home/Home';
+import Reservation from './Reservation/Reservation';
 import ProtectedRoute from './ProtectedRoute';
 import { Switch, Route } from 'react-router-dom';
 import FetchUser from './FetchUser';
@@ -17,7 +18,6 @@ const Parallax = glamorous.div({
   overflowX: 'hidden',
   overflowY: 'auto',
   perspective: '1px',
-  border: '1px solid black',
 })
 
 class App extends Component {
@@ -31,6 +31,7 @@ class App extends Component {
             <Route exact path='/' component={Home} />
             <Route exact path='/login' component={Login} />
             <Route exact path='/register' component={Register} />
+            <Route exact path='/reservation' component={Reservation} />
             <Route component={NoMatch} />
           </Switch>
         </FetchUser>
