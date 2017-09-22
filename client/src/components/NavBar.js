@@ -4,34 +4,11 @@ import { Link, NavLink } from 'react-router-dom'
 import { connect } from 'react-redux';
 import { handleLogout } from '../actions/auth';
 import { withRouter } from 'react-router-dom';
+import glamorous from 'glamorous';
+
+
 
 class NavBar extends Component {
-  rightNavs = () => {
-    const { user, dispatch, history } = this.props;
-
-    if(user.id) {
-      return(
-        <Menu.Menu position='right'>
-          <Menu.Item
-            name='Logout'
-            onClick={() => dispatch(handleLogout(history))}
-          />
-        </Menu.Menu>
-      );
-    } else {
-      return(
-        <Menu.Menu position='right'>
-          <Link to='/register'>
-            <Menu.Item name='Register' />
-          </Link>
-          <Link to='/login'>
-            <Menu.Item name='Login' />
-          </Link>
-        </Menu.Menu>
-      );
-    }
-  }
-
   render() {
     return (
       <div>
@@ -48,8 +25,35 @@ class NavBar extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  return { user: state.user }
-}
+// const mapStateToProps = (state) => {
+//   return { user: state.user }
+// }
 
-export default withRouter(connect(mapStateToProps)(NavBar));
+export default withRouter(NavBar);
+
+
+// rightNavs = () => {
+//   const { user, dispatch, history } = this.props;
+//
+//   if(user.id) {
+//     return(
+//       <Menu.Menu position='right'>
+//         <Menu.Item
+//           name='Logout'
+//           onClick={() => dispatch(handleLogout(history))}
+//         />
+//       </Menu.Menu>
+//     );
+//   } else {
+//     return(
+//       <Menu.Menu position='right'>
+//         <Link to='/register'>
+//           <Menu.Item name='Register' />
+//         </Link>
+//         <Link to='/login'>
+//           <Menu.Item name='Login' />
+//         </Link>
+//       </Menu.Menu>
+//     );
+//   }
+// }
