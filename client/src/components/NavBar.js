@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { connect } from 'react-redux';
 import { handleLogout } from '../actions/auth';
 import { withRouter } from 'react-router-dom';
@@ -36,9 +36,12 @@ class NavBar extends Component {
     return (
       <div>
         <Menu pointing secondary fixed='top'>
-          <Link to='/'>
-            <Menu.Item name='home' />
-          </Link>
+          <Menu.Item name='home'>
+            <NavLink to='/' style={{ color: 'white'}}>Home</NavLink>
+          </Menu.Item>
+          <Menu.Item name='reservation'>
+            <NavLink to='/reservation' style={{ color: 'white'}}>Reservation</NavLink>
+          </Menu.Item>
         </Menu>
       </div>
     )
