@@ -14,3 +14,23 @@ export const ParallaxGroup = glamorous.div({
   position: 'relative',
   transformStyle: 'preserve-3d',
 })
+
+
+export const PageHeader = glamorous.div({
+  paddingTop: '20vh',
+  fontSize: '4em',
+  fontWeight: 'bold',
+})
+
+
+export const Content = glamorous.div({
+  paddingTop: '10vh',
+  fontSize: '1.2em',
+  color: '#616161',
+  fontWeight: '400',
+
+})
+
+export const TextContainer = glamorous.div({
+  padding: '0 15vw',
+})
