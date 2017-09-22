@@ -24,6 +24,7 @@ const LayerBack = glamorous.div(ParallaxLayer, {
 const BGImage = glamorous.div({
   height: '100vh',
   backgroundSize: 'cover',
+  background:`linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(${home1})`,
 })
 
 class Home extends Component {
@@ -33,12 +34,7 @@ class Home extends Component {
     return(
         <div>
           <ParallaxGroup style={{ zIndex: '10'}}>
-            <LayerBack >
-              <BGImage style={{backgroundImage: `url(${home1})`}}>
-                This is the background
-              </BGImage>
-            </LayerBack>
-
+            <LayerBack > <BGImage /> </LayerBack>
             <LayerBase>
               <div style={{height:'50vh', background: 'white'}}>
                 <div >
