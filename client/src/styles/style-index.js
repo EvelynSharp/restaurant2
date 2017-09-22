@@ -20,6 +20,7 @@ export const PageHeader = glamorous.div({
   paddingTop: '20vh',
   fontSize: '4em',
   fontWeight: 'bold',
+  fontFamily: 'Domine, serif',
 })
 
 
@@ -28,7 +29,7 @@ export const Content = glamorous.div({
   fontSize: '1.2em',
   color: '#616161',
   fontWeight: '400',
-
+  fontFamily: '"Open Sans", sans-serif',
 })
 
 export const TextContainer = glamorous.div({

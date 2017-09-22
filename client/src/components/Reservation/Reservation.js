@@ -28,6 +28,7 @@ const ResHeader = glamorous.div({
   fontSize: '1.5em',
   fontWeight: 'bold',
   paddingTop: '15vh',
+  fontFamily: '"Open Sans", sans-serif',
 })
 
 const Reservation = ({}) => (
