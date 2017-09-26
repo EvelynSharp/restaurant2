@@ -9,6 +9,12 @@ export const ParallaxLayer = {
   left: '0',
 }
 
+export const PageHeaderImg = {
+  height: '500px',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+}
+
 export const ParallaxGroup = glamorous.div({
   height: '100vh',
   position: 'relative',
@@ -34,4 +40,13 @@ export const Content = glamorous.div({
 
 export const TextContainer = glamorous.div({
   padding: '0 15vw',
+})
+
+export const PageLayerBase = glamorous.div(ParallaxLayer, {
+ transform: 'translateZ(0) scale(1)',
+ padding: '500px 0',
+})
+
+export const PageLayerBack = glamorous.div(ParallaxLayer, {
+ transform: 'translateZ(-0.5px) scale(1.5)',
 })

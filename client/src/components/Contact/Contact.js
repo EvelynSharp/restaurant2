@@ -1,5 +1,5 @@
 import React from 'react';
-import reservationImg from '../../images/reservationImg.jpeg';
+import contactImg from '../../images/contactImg.jpeg';
 import glamorous from 'glamorous';
 import { PageHeader,
          Content,
@@ -10,6 +10,7 @@ import { PageHeader,
         } from '../../styles/style-index';
 
 const BGImage = glamorous.div(PageHeaderImg, {
+  background:`linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(${contactImg})`,
   backgroundSize: 'cover',
 })
 
@@ -23,7 +24,7 @@ const ResHeader = glamorous.div({
 const Reservation = () => (
   <div>
     <PageLayerBack >
-      <BGImage style={{backgroundImage: `url(${reservationImg})`}}/>
+      <BGImage/>
     </PageLayerBack>
 
     <PageLayerBase>

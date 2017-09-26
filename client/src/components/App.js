@@ -6,6 +6,7 @@ import Register from './Register';
 import Flash from './Flash';
 import Home from './Home/Home';
 import Reservation from './Reservation/Reservation';
+import Contact from './Contact/Contact';
 import ProtectedRoute from './ProtectedRoute';
 import { Switch, Route } from 'react-router-dom';
 import FetchUser from './FetchUser';
@@ -32,6 +33,7 @@ class App extends Component {
             <Route exact path='/login' component={Login} />
             <Route exact path='/register' component={Register} />
             <Route exact path='/reservation' component={Reservation} />
+            <Route exact path='/contact' component={Contact} />
             <Route component={NoMatch} />
           </Switch>
         </FetchUser>
