@@ -14,7 +14,23 @@ const BGImage = glamorous.div(PageHeaderImg, {
   backgroundSize: 'cover',
 })
 
-const Reservation = () => (
+const InfoSec = glamorous.div({
+  width: '100%',
+  '@media(min-width: 600px)': {
+    width: '40%',
+  }
+})
+
+const FormSec = glamorous.div({
+  width: '60%',
+  '@media(max-width: 600px)': {
+    width: '100vw',
+  }
+})
+
+
+const Reservation = () => {
+  return (
   <div>
     <PageLayerBack >
       <BGImage/>
@@ -23,17 +39,18 @@ const Reservation = () => (
     <PageLayerBase>
       <div style={{ background: 'white'}}>
         <Grid style={{ minHeight: '500px'}}>
-          <Grid.Column width={6} style={{ minWidth: '200px', border: '1px solid black', padding: '0'}}>
+          <InfoSec style={{ border: '1px solid black', padding: '0'}}>
             <Info />
-          </Grid.Column>
-          <Grid.Column width={10} style={{ minWidth: '350px',  border: '1px solid black', padding: '0'}}>
+          </InfoSec>
+          <FormSec style={{ border: '1px solid black', padding: '0'}}>
             <ContactForm />
-          </Grid.Column>
+          </FormSec>
           <p style={{ paddingBottom: '25vh'}} />
         </Grid>
       </div>
     </PageLayerBase>
   </div>
-)
+  )
+}
 
 export default Reservation;

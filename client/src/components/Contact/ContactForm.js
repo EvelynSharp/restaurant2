@@ -46,7 +46,10 @@ const ContactForm = ({ handleSubmit, reset }) => (
         </Form.Group>
         <Field name="email" label="Email" component={Input} type="email" />
         <Field name="message" label="Message" component={Message} type="text" />
-        <Button type="submit" primary>Submit</Button>
+        <div style={{ textAlign: 'center'}} >
+          <Button type="submit" primary>Submit</Button>
+          <Button type="button" secondary onClick={reset}>Reset</Button>
+        </div>
       </Form>
     </FormWrapper>
   </div>
