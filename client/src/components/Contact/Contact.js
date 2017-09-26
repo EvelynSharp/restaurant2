@@ -29,6 +29,7 @@ const Reservation = () => (
           <Grid.Column width={10} style={{ minWidth: '350px',  border: '1px solid black', padding: '0'}}>
             <ContactForm />
           </Grid.Column>
+          <p style={{ paddingBottom: '25vh'}} />
         </Grid>
       </div>
     </PageLayerBase>
