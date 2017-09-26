@@ -26,7 +26,7 @@ const Reservation = () => (
     </PageLayerBack>
 
     <PageLayerBase>
-      <div style={{height:'100vh', background: 'white'}}>
+      <div style={{ background: 'white'}}>
         <Grid>
           <Grid.Column>
             <PageHeader>RESERVATIONS</PageHeader>
