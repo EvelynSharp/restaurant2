@@ -22,7 +22,7 @@ const Reservation = () => (
 
     <PageLayerBase>
       <div style={{ background: 'white'}}>
-        <Grid>
+        <Grid style={{ minHeight: '500px'}}>
           <Grid.Column width={6} style={{ minWidth: '200px', border: '1px solid black', padding: '0'}}>
             <Info />
           </Grid.Column>

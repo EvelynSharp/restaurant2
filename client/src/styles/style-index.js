@@ -15,7 +15,7 @@ export const PageHeaderImg = {
   backgroundRepeat: 'no-repeat',
 }
 
-export const Content = {  
+export const Content = {
   fontSize: '1.2em',
   color: '#616161',
   fontWeight: '400',
@@ -42,7 +42,7 @@ export const PageHeader = glamorous.div({
 export const ResHeader = glamorous.div({
   fontSize: '1.5em',
   fontWeight: 'bold',
-  paddingTop: '15vh',
+  paddingTop: '15%',
   fontFamily: '"Open Sans", sans-serif',
 })
 
