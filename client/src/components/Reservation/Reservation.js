@@ -8,17 +8,11 @@ import { PageHeader,
          PageLayerBase,
          PageLayerBack,
          PageHeaderImg,
+         ResHeader,
         } from '../../styles/style-index';
 
 const BGImage = glamorous.div(PageHeaderImg, {
   backgroundSize: 'cover',
-})
-
-const ResHeader = glamorous.div({
-  fontSize: '1.5em',
-  fontWeight: 'bold',
-  paddingTop: '15vh',
-  fontFamily: '"Open Sans", sans-serif',
 })
 
 const Reservation = () => (

@@ -38,6 +38,13 @@ export const Content = glamorous.div({
   fontFamily: '"Open Sans", sans-serif',
 })
 
+export const ResHeader = glamorous.div({
+  fontSize: '1.5em',
+  fontWeight: 'bold',
+  paddingTop: '15vh',
+  fontFamily: '"Open Sans", sans-serif',
+})
+
 export const TextContainer = glamorous.div({
   padding: '0 15vw',
 })
