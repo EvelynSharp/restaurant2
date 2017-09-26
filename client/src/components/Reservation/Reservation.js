@@ -38,7 +38,7 @@ const Reservation = ({}) => (
     </LayerBack>
 
     <LayerBase>
-      <div style={{height:'50vh', background: 'white'}}>
+      <div style={{height:'100vh', background: 'white'}}>
         <PageHeader>RESERVATIONS</PageHeader>
         <ResHeader>PLEASE NOTE</ResHeader>
         <TextContainer>

@@ -6,19 +6,28 @@ import { handleLogout } from '../actions/auth';
 import { withRouter } from 'react-router-dom';
 import glamorous from 'glamorous';
 
-
+const Logo = glamorous.div({
+  padding: '80px 0 0 10vw !important',
+  color: 'white !important',
+  fontSize: '3em',
+})
 
 class NavBar extends Component {
   render() {
     return (
       <div>
-        <Menu pointing secondary fixed='top'>
-          <Menu.Item name='home'>
-            <NavLink to='/' style={{ color: 'white'}}>Home</NavLink>
+        <Menu pointing secondary fixed='top' style={{ border: 0}}>
+          <Menu.Item as={Logo} name='home'>
+            The East
           </Menu.Item>
-          <Menu.Item name='reservation'>
-            <NavLink to='/reservation' style={{ color: 'white'}}>Reservation</NavLink>
-          </Menu.Item>
+          <Menu.Menu position='right'>
+            <Menu.Item name='home'>
+              <NavLink to='/' style={{ color: 'white'}}>HOME</NavLink>
+            </Menu.Item>
+            <Menu.Item name='reservation' style={{ paddingRight: '10vw'}}>
+              <NavLink to='/reservation' style={{ color: 'white'}}>RESERVATION</NavLink>
+            </Menu.Item>
+          </Menu.Menu>
         </Menu>
       </div>
     )
