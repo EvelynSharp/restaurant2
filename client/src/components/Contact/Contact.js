@@ -39,10 +39,10 @@ const Reservation = () => {
     <PageLayerBase>
       <div style={{ background: 'white'}}>
         <Grid style={{ minHeight: '500px'}}>
-          <InfoSec style={{ border: '1px solid black', padding: '0'}}>
+          <InfoSec style={{ padding: '0'}}>
             <Info />
           </InfoSec>
-          <FormSec style={{ border: '1px solid black', padding: '0'}}>
+          <FormSec style={{ padding: '0'}}>
             <ContactForm />
           </FormSec>
           <p style={{ paddingBottom: '25vh'}} />
