@@ -9,6 +9,19 @@ export const ParallaxLayer = {
   left: '0',
 }
 
+export const PageHeaderImg = {
+  height: '500px',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+}
+
+export const Content = {
+  fontSize: '1.2em',
+  color: '#616161',
+  fontWeight: '400',
+  fontFamily: '"Open Sans", sans-serif',
+}
+
 export const ParallaxGroup = glamorous.div({
   height: '100vh',
   position: 'relative',
@@ -24,14 +37,24 @@ export const PageHeader = glamorous.div({
 })
 
 
-export const Content = glamorous.div({
-  paddingTop: '10vh',
-  fontSize: '1.2em',
-  color: '#616161',
-  fontWeight: '400',
+
+
+export const ResHeader = glamorous.div({
+  fontSize: '1.5em',
+  fontWeight: 'bold',
+  paddingTop: '15%',
   fontFamily: '"Open Sans", sans-serif',
 })
 
 export const TextContainer = glamorous.div({
   padding: '0 15vw',
+})
+
+export const PageLayerBase = glamorous.div(ParallaxLayer, {
+ transform: 'translateZ(0) scale(1)',
+ padding: '500px 0',
+})
+
+export const PageLayerBack = glamorous.div(ParallaxLayer, {
+ transform: 'translateZ(-0.5px) scale(1.5)',
 })
