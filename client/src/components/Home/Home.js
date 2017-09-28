@@ -58,28 +58,3 @@ class Home extends Component {
 }
 
 export default Home;
-
-
-//
-// <Parallax style={{backgroundImage: `url(${home1})`}}>
-//   <HeaderMain>home</HeaderMain>
-// </Parallax>
-//
-// <div style={{ height: '50vh'}}>
-// Scroll Up and Down this page to see the parallax scrolling effect.
-// This div is just here to enable scrolling.
-// Tip: Try to remove the background-attachment property to remove the scrolling effect.
-// </div>
-// <div style={{ backgroundColor:'black', height: '50vh'}}>
-// Scroll Up and Down this page to see the parallax scrolling effect.
-// This div is just here to enable scrolling.
-// Tip: Try to remove the background-attachment property to remove the scrolling effect.
-// </div>
-//
-// <Parallax style={{backgroundImage: `url(${home2})`}}></Parallax>
-//
-// <div style={{ height: '50vh'}}>
-// Scroll Up and Down this page to see the parallax scrolling effect.
-// This div is just here to enable scrolling.
-// Tip: Try to remove the background-attachment property to remove the scrolling effect.
-// </div>
