@@ -9,6 +9,7 @@ import { PageHeader,
          PageHeaderImg,
          ResHeader,
         } from '../../styles/style-index';
+import footerImg from '../../images/footerImg.jpeg';
 
 const ContentText = glamorous.div( Content, {
   paddingTop: '1%',
@@ -29,6 +30,12 @@ const Btn = glamorous.div({
   }
 })
 
+const Img = glamorous.img({
+  height: '30%',
+  width: '50%',
+
+})
+
 const Footer = () => (
   <div style={{backgroundColor: '#3C342F', color: 'white'}}>
     <h1>Footer</h1>
@@ -38,12 +45,14 @@ const Footer = () => (
       <ContentText>{`84108`}</ContentText>
       <ContentText>{`info@theeastslc.com`}</ContentText>
     </div>
-    <div style={{ padding: '1% 0 5% 0'}}>
+    <div style={{ padding: '0 0 5% 0'}}>
       <Button as={Btn} icon='facebook f' />
       <Button as={Btn} icon='instagram' />
       <Button as={Btn} icon='twitter' />
     </div>
-
+    <div style={{ padding: '0 0 10% 0'}}>
+      <Img src={footerImg} />
+    </div>
   </div>
 )
 
