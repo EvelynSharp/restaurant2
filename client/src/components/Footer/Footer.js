@@ -10,6 +10,7 @@ import { PageHeader,
          ResHeader,
         } from '../../styles/style-index';
 import footerImg from '../../images/footerImg.jpeg';
+import RestMap from './RestMap';
 
 const ContentText = glamorous.div( Content, {
   paddingTop: '1%',
@@ -38,7 +39,7 @@ const Img = glamorous.img({
 
 const Footer = () => (
   <div style={{backgroundColor: '#3C342F', color: 'white'}}>
-    <h1>Footer</h1>
+    <RestMap />
     <div style={{ padding: '1% 0 5% 0'}}>
       <ContentText>{`1000 S 500 E `}</ContentText>
       <ContentText>{`Salt Lake City, UT`}</ContentText>
