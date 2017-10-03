@@ -8,6 +8,7 @@ import { PageLayerBase,
         } from '../../styles/style-index';
 import Info from './Info';
 import ContactForm from './ContactForm';
+import Footer from '../Footer/Footer'
 
 const BGImage = glamorous.div(PageHeaderImg, {
   background:`linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(${contactImg})`,
@@ -48,6 +49,7 @@ const Reservation = () => {
           <p style={{ paddingBottom: '25vh'}} />
         </Grid>
       </div>
+      <Footer />
     </PageLayerBase>
   </div>
   )

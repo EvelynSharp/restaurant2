@@ -1,6 +1,7 @@
 import React from 'react';
 import reservationImg from '../../images/reservationImg.jpeg';
 import glamorous from 'glamorous';
+import Footer from '../Footer/Footer'
 import { Grid } from 'semantic-ui-react';
 import { PageHeader,
          Content,
@@ -10,6 +11,7 @@ import { PageHeader,
          PageHeaderImg,
          ResHeader,
         } from '../../styles/style-index';
+
 
 const BGImage = glamorous.div(PageHeaderImg, {
   backgroundSize: 'cover',
@@ -51,7 +53,9 @@ const Reservation = () => (
           </Grid.Column>
         </Grid>
       </div>
+    <Footer/>
     </PageLayerBase>
+
   </div>
 )
 

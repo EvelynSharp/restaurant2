@@ -42,7 +42,7 @@ export const PageHeader = glamorous.div({
 export const ResHeader = glamorous.div({
   fontSize: '1.5em',
   fontWeight: 'bold',
-  paddingTop: '15%',
+  paddingTop: '12%',
   fontFamily: '"Open Sans", sans-serif',
 })
 

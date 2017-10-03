@@ -12,7 +12,6 @@ import { Switch, Route } from 'react-router-dom';
 import FetchUser from './FetchUser';
 import glamorous from 'glamorous';
 
-
 const Parallax = glamorous.div({
   height: '100vh',
   // width: '100vw',
