@@ -20,6 +20,7 @@ export const Content = {
   color: '#616161',
   fontWeight: '400',
   fontFamily: '"Open Sans", sans-serif',
+  lineHeight: '150%',
 }
 
 export const ParallaxGroup = glamorous.div({
@@ -30,7 +31,7 @@ export const ParallaxGroup = glamorous.div({
 
 
 export const PageHeader = glamorous.div({
-  paddingTop: '20vh',
+  paddingTop: '15%',
   fontSize: '4em',
   fontWeight: 'bold',
   fontFamily: 'Domine, serif',

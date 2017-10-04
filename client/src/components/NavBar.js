@@ -13,7 +13,7 @@ const Logo = glamorous.div({
 
 class NavBar extends Component {
   render() {
-    const color = this.props.history.location.pathname === '/reservation' ? 'black' : 'white'
+    const color = this.props.history.location.pathname === '/restaurant' ? 'black' : 'white'
     return (
       <div>
         <Menu pointing secondary fixed='top' style={{ border: 0}}>
