@@ -18,7 +18,7 @@ const BGImage = glamorous.div(PageHeaderImg, {
 })
 
 const ContentText = glamorous.div( Content, {
-  paddingTop: '10vh',
+  paddingTop: '5%',
 })
 
 const Reservation = () => (
@@ -46,7 +46,7 @@ const Reservation = () => (
             </TextContainer>
             <ResHeader>PRIVATE DINING</ResHeader>
             <TextContainer>
-              <ContentText style={{ paddingBottom: '25vh'}}>
+              <ContentText style={{ paddingBottom: '15%'}}>
                 The Restaurant2 is available to reserve as a private dining space for up to 32 people. Our space is filled with rich wood and vintage finishes throughout, exposed brick walls and a bar area. For cocktail parties, we can accommodate up to 50 people. Please contact us for pricing and additional information at info@theRestaurant2nyc.com.
               </ContentText>
             </TextContainer>

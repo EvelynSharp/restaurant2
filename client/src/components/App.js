@@ -5,6 +5,7 @@ import Login from './Login';
 import Register from './Register';
 import Flash from './Flash';
 import Home from './Home/Home';
+import Restaurant from './Restaurant/Restaurant';
 import Reservation from './Reservation/Reservation';
 import Contact from './Contact/Contact';
 import ProtectedRoute from './ProtectedRoute';
@@ -31,6 +32,7 @@ class App extends Component {
             <Route exact path='/' component={Home} />
             <Route exact path='/login' component={Login} />
             <Route exact path='/register' component={Register} />
+            <Route exact path='/restaurant' component={Restaurant} />
             <Route exact path='/reservation' component={Reservation} />
             <Route exact path='/contact' component={Contact} />
             <Route component={NoMatch} />

@@ -8,27 +8,30 @@ import glamorous from 'glamorous';
 
 const Logo = glamorous.div({
   padding: '80px 0 0 10vw !important',
-  color: 'white !important',
   fontSize: '3em',
 })
 
 class NavBar extends Component {
   render() {
+    const color = this.props.history.location.pathname === '/reservation' ? 'black' : 'white'
     return (
       <div>
         <Menu pointing secondary fixed='top' style={{ border: 0}}>
-          <Menu.Item as={Logo} name='home'>
+          <Menu.Item as={Logo} style={{ color }} name='home'>
             The East
           </Menu.Item>
           <Menu.Menu position='right'>
             <Menu.Item name='home'>
-              <NavLink to='/' style={{ color: 'white'}}>HOME</NavLink>
+              <NavLink to='/' style={{ color }}>HOME</NavLink>
+            </Menu.Item>
+            <Menu.Item name='restaurant'>
+              <NavLink to='/restaurant' style={{ color }}>RESTAURANT</NavLink>
             </Menu.Item>
             <Menu.Item name='reservation'>
-              <NavLink to='/reservation' style={{ color: 'white'}}>RESERVATION</NavLink>
+              <NavLink to='/reservation'style={{ color }}>RESERVATION</NavLink>
             </Menu.Item>
             <Menu.Item name='contact' style={{ paddingRight: '10vw'}}>
-              <NavLink to='/contact' style={{ color: 'white'}}>CONTACT</NavLink>
+              <NavLink to='/contact' style={{ color }}>CONTACT</NavLink>
             </Menu.Item>
           </Menu.Menu>
         </Menu>
@@ -37,35 +40,5 @@ class NavBar extends Component {
   }
 }
 
-// const mapStateToProps = (state) => {
-//   return { user: state.user }
-// }
 
 export default withRouter(NavBar);
-
-
-// rightNavs = () => {
-//   const { user, dispatch, history } = this.props;
-//
-//   if(user.id) {
-//     return(
-//       <Menu.Menu position='right'>
-//         <Menu.Item
-//           name='Logout'
-//           onClick={() => dispatch(handleLogout(history))}
-//         />
-//       </Menu.Menu>
-//     );
-//   } else {
-//     return(
-//       <Menu.Menu position='right'>
-//         <Link to='/register'>
-//           <Menu.Item name='Register' />
-//         </Link>
-//         <Link to='/login'>
-//           <Menu.Item name='Login' />
-//         </Link>
-//       </Menu.Menu>
-//     );
-//   }
-// }
