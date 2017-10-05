@@ -45,7 +45,7 @@ const Restaurant = () => (
         This is a neighborhood restaurant that puts a creative spin on refined, seasonal fare. Drawing flavors and inspiration from around the globe, Chef Jeremy Salamon’s menu spotlights seasonal produce and local proteins. The Eddy also boasts a diverse and accessible wine list and original cocktails served in an eclectic array of glasses, tea cups and copper goblets. The space was designed by the very talented and amiable Michael J. Groth.
       </ContentText>
     </TextContainer>
-    <TextContainer style={{ padding: '5% 0 15% 0'}}>
+    <TextContainer style={{ padding: '5% 0 10% 0'}}>
       {staff.map( person => {
         return (
           <ProfileDisplay person={person}/>
