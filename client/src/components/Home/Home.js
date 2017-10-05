@@ -3,6 +3,7 @@ import { ParallaxLayer, ParallaxGroup, } from '../../styles/style-index';
 import homeImg from '../../images/homeImg.jpeg';
 import reservationImg from '../../images/reservationImg.jpeg';
 import glamorous from 'glamorous';
+import Intro from '../Restaurant/Intro';
 
 const LayerBase = glamorous.div(ParallaxLayer, {
   transform: 'translateZ(0) scale(1)',
@@ -28,15 +29,11 @@ class Home extends Component {
           <ParallaxGroup style={{ zIndex: '10'}}>
             <LayerBack > <BGImage /> </LayerBack>
             <LayerBase>
-              <div style={{height:'50vh', background: 'white'}}>
-                <div >
-                  This is the foreground
-                </div>
-              </div>
+                <Intro home={true}/>
             </LayerBase>
           </ParallaxGroup>
 
-          <ParallaxGroup style={{ border: '1px solid black', height: '100vh', marginTop: '30vh'}}>
+          <ParallaxGroup style={{ border: '1px solid black', height: '100vh', marginTop: '100vh'}}>
             <LayerBack >
               <BGImage style={{backgroundImage: `url(${reservationImg})`}}>
                 This is the background
