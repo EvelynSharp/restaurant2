@@ -15,7 +15,6 @@ const LayerBack = glamorous.div(ParallaxLayer, {
 })
 
 const BGImage = glamorous.div({
-  height: '100vh',
   backgroundSize: 'cover',
   background:`linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(${homeImg})`,
 })
@@ -27,20 +26,18 @@ class Home extends Component {
     return(
         <div>
           <ParallaxGroup style={{ zIndex: '10'}}>
-            <LayerBack > <BGImage /> </LayerBack>
+            <LayerBack > <BGImage style={{ height: '100vh'}}/> </LayerBack>
             <LayerBase>
                 <Intro home={true}/>
             </LayerBase>
           </ParallaxGroup>
 
-          <ParallaxGroup style={{ border: '1px solid black', height: '100vh', marginTop: '100vh'}}>
+          <ParallaxGroup style={{ height: '100vh', marginTop: '200vh'}}>
             <LayerBack >
-              <BGImage style={{backgroundImage: `url(${reservationImg})`}}>
-                This is the background
-              </BGImage>
+              <BGImage style={{height: '750px', backgroundImage: `url(${reservationImg})`}}/>
             </LayerBack>
 
-            <LayerBase style={{ paddingTop: '80vh'}}>
+            <LayerBase style={{ paddingTop: '200vh'}}>
               <div style={{height:'50vh', width: '100vw', background: 'white'}}>
                 <div style={{ border: '1px solid yellow'}}>
                   This is the foreground

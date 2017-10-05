@@ -33,7 +33,7 @@ const staff = [
 ]
 
 const Intro = ({home}) => (
-  <div style={{ background: 'white'}}>
+  <div style={{ background: 'white', minHeight: '100vh'}}>
     <PageHeader style={{ paddingTop: `${home ? '10%' : '0'}`}}>THE</PageHeader>
     <PageHeader style={{ paddingTop: '1em'}}>RESTAURANT</PageHeader>
     <TextContainer>
