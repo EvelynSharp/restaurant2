@@ -4,10 +4,10 @@ import homeImg from '../../images/homeImg.jpeg';
 import reservationImg from '../../images/reservationImg.jpeg';
 import glamorous from 'glamorous';
 import Intro from '../Restaurant/Intro';
+import ResInfo from '../Reservation/ResInfo';
 
 const LayerBase = glamorous.div(ParallaxLayer, {
   transform: 'translateZ(0) scale(1)',
-  padding: '100vh 0',
 })
 
 const LayerBack = glamorous.div(ParallaxLayer, {
@@ -27,22 +27,19 @@ class Home extends Component {
         <div>
           <ParallaxGroup style={{ zIndex: '10'}}>
             <LayerBack > <BGImage style={{ height: '100vh'}}/> </LayerBack>
-            <LayerBase>
+            <LayerBase style={{padding: '100vh 0'}}>
                 <Intro home={true}/>
             </LayerBase>
           </ParallaxGroup>
 
           <ParallaxGroup style={{ height: '100vh', marginTop: '200vh'}}>
             <LayerBack >
-              <BGImage style={{height: '750px', backgroundImage: `url(${reservationImg})`}}/>
+              <BGImage style={{height: '750px', background: `linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(${reservationImg})`}}>
+              </BGImage>
             </LayerBack>
 
-            <LayerBase style={{ paddingTop: '200vh'}}>
-              <div style={{height:'50vh', width: '100vw', background: 'white'}}>
-                <div style={{ border: '1px solid yellow'}}>
-                  This is the foreground
-                </div>
-              </div>
+            <LayerBase>
+              <ResInfo home={true} />
             </LayerBase>
           </ParallaxGroup>
         </div>
