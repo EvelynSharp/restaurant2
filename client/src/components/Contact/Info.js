@@ -8,7 +8,7 @@ const ContentText = glamorous.div( Content, {
 
 const Info = () => (
   <div style={{ height: '100%'}}>
-    <ResHeader>ADDRESS</ResHeader>
+    <ResHeader style={{paddingTop: '4em'}}>ADDRESS</ResHeader>
       <div style={{ padding: '3% 0 0 0'}}>
         <ContentText>{`1000 S 500 E `}</ContentText>
         <ContentText>{`Salt Lake City, UT`}</ContentText>

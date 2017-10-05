@@ -42,7 +42,7 @@ const ContactForm = ({ handleSubmit, reset, dispatch }) => {
 
   return (
     <div>
-      <ResHeader>CONTACT US</ResHeader>
+      <ResHeader style={{ paddingTop: '4em' }}>CONTACT US</ResHeader>
       <FormWrapper>
         <Form onSubmit={handleSubmit(submitForm)}>
           <Form.Group widths='equal'>
