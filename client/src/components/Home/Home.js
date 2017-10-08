@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import { ParallaxLayer, ParallaxGroup, } from '../../styles/style-index';
 import homeImg from '../../images/homeImg.jpeg';
+import contactImg from '../../images/contactImg.jpeg';
 import reservationImg from '../../images/reservationImg.jpeg';
 import glamorous from 'glamorous';
 import Intro from '../Restaurant/Intro';
 import ResInfo from '../Reservation/ResInfo';
+import Info from '../Contact/Info';
+import ContactForm from '../Contact/ContactForm';
 
 const LayerBase = glamorous.div(ParallaxLayer, {
   transform: 'translateZ(0) scale(1)',
@@ -33,7 +36,7 @@ class Home extends Component {
             </LayerBase>
           </ParallaxGroup>
 
-          <ParallaxGroup style={{ minHeight: '100vh', marginTop: '1200px'}}>
+          <ParallaxGroup style={{ minHeight: '100vh', marginTop: '1100px'}}>
             <LayerBack >
               <BGImage style={{height: '750px', background: `linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(${reservationImg})`}}>
               </BGImage>
@@ -41,8 +44,26 @@ class Home extends Component {
 
             <LayerBase style={{ minHeight: '750px'}}>
               <ResInfo home={true} />
+              <div style={{ minHeight: '750px', background: 'white', border: '1px solid black'}} >
+                menu placeholder
+              </div>
             </LayerBase>
           </ParallaxGroup>
+
+          <ParallaxGroup style={{ minHeight: '100vh', marginTop: '1300px'}}>
+            <LayerBack >
+              <BGImage style={{height: '750px', background: `linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(${contactImg})`}}>
+              </BGImage>
+            </LayerBack>
+
+            <LayerBase style={{ minHeight: '750px'}}>
+              <ResInfo home={true} />
+              <div style={{ minHeight: '750px', background: 'white', border: '1px solid black'}} >
+                galary
+              </div>
+            </LayerBase>
+          </ParallaxGroup>
+
         </div>
 
     );
