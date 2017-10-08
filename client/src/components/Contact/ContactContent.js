@@ -18,14 +18,14 @@ const FormSec = glamorous.div({
   }
 })
 
-const ContactContent = () => (
-  <div style={{ background: 'white'}}>
+const ContactContent = ({home}) => (
+  <div style={ home ? null : { background: 'white'}}>
     <Grid style={{ minHeight: '500px'}}>
       <InfoSec style={{ padding: '0'}}>
-        <Info />
+        <Info/>
       </InfoSec>
       <FormSec style={{ padding: '0'}}>
-        <ContactForm />
+        <ContactForm/>
       </FormSec>
       <p style={{ paddingBottom: '25vh'}} />
     </Grid>
