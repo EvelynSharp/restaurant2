@@ -1,14 +1,7 @@
 import React from 'react';
 import glamorous from 'glamorous';
-import { Icon, Button } from 'semantic-ui-react';
-import { PageHeader,
-         Content,
-         TextContainer,
-         PageLayerBase,
-         PageLayerBack,
-         PageHeaderImg,
-         ResHeader,
-        } from '../../styles/style-index';
+import { Button } from 'semantic-ui-react';
+import { Content } from '../../styles/style-index';
 import footerImg from '../../images/footerImg.jpeg';
 import RestMap from './RestMap';
 
