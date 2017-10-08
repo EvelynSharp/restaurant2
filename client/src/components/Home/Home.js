@@ -22,6 +22,7 @@ const BGImage = glamorous.div({
 class Home extends Component {
 
   render() {
+//TODO: fix vh so when vh is low still show all reservation
 
     return(
         <div>
@@ -32,13 +33,13 @@ class Home extends Component {
             </LayerBase>
           </ParallaxGroup>
 
-          <ParallaxGroup style={{ height: '100vh', marginTop: '200vh'}}>
+          <ParallaxGroup style={{ minHeight: '100vh', marginTop: '1200px'}}>
             <LayerBack >
               <BGImage style={{height: '750px', background: `linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(${reservationImg})`}}>
               </BGImage>
             </LayerBack>
 
-            <LayerBase>
+            <LayerBase style={{ minHeight: '750px'}}>
               <ResInfo home={true} />
             </LayerBase>
           </ParallaxGroup>

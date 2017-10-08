@@ -44,7 +44,7 @@ const Intro = ({home}) => (
     <TextContainer style={{ padding: '5% 0 10% 0'}}>
       {staff.map( person => {
         return (
-          <ProfileDisplay person={person}/>
+          <ProfileDisplay key={person.name} person={person}/>
         )
       })}
     </TextContainer>
