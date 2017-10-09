@@ -1,9 +1,16 @@
 import React from 'react';
+import { Grid } from 'semantic-ui-react';
+import glamorous from 'glamorous';
 
-const Photo = () => (
-  <div>
+const Image = glamorous.img({
+  width: '20vw',
+  height: '13vw',
+})
 
-  </div>
+const Photo = ({ photo }) => (
+  <Grid.Column>
+    <Image src={photo.img}/>
+  </Grid.Column>
 )
 
 export default Photo;
