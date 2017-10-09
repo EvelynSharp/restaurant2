@@ -7,6 +7,8 @@ import glamorous from 'glamorous';
 import Intro from '../Restaurant/Intro';
 import ResInfo from '../Reservation/ResInfo';
 import ContactContent from '../Contact/ContactContent';
+import Gallery from './Gallery';
+import Footer from '../Footer/Footer';
 
 const LayerBase = glamorous.div(ParallaxLayer, {
   transform: 'translateZ(0) scale(1)',
@@ -58,7 +60,7 @@ class Home extends Component {
             <LayerBase style={{ minHeight: '750px'}}>
               <ContactContent home={true} />
               <div style={{ minHeight: '750px', background: 'white', border: '1px solid black'}} >
-                galary
+                <Gallery />
               </div>
             </LayerBase>
           </ParallaxGroup>
