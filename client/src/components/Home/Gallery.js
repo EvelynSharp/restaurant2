@@ -12,7 +12,7 @@ const Gallery = () => (
   <div>
     <PageHeader style={{ paddingTop: '3em'}}>GALLERY</PageHeader>
     <Grid style={{
-      margin: '8% 10%'
+      margin: '8% 10% 100px 10%'
     }}>
       <Grid.Row columns={3}>
         { galleryphotos.slice(0,3).map( photo => <Photo key={photo.key} photo={photo}/>)}
