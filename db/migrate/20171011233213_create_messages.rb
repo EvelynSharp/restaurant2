@@ -1,10 +1,10 @@
-class CreateMails < ActiveRecord::Migration[5.1]
+class CreateMessages < ActiveRecord::Migration[5.1]
   def change
-    create_table :mails do |t|
+    create_table :messages do |t|
       t.string :first_name
       t.string :last_name
       t.string :email
-      t.string :message
+      t.string :message_content
 
       t.timestamps
     end
