@@ -6,7 +6,7 @@ export const sendMail = ({firstName, lastName, email, message}) => {
   return(dispatch) => {
    axios.post(`/api/messages`, {first_name: firstName, last_name: lastName, email, message_content: message} )
     .then( ({ data, headers }) => {
-      console.log(data)
+      // console.log(data)
      // dispatch({ type: UPDATE_PROJECT, project: data, headers });
     })
     .catch( err => {
