@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
 import { NavLink } from 'react-router-dom'
-import { connect } from 'react-redux';
-import { handleLogout } from '../actions/auth';
+// import { handleLogout } from '../actions/auth';
 import { withRouter } from 'react-router-dom';
 import glamorous from 'glamorous';
 

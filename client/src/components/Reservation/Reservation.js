@@ -3,13 +3,9 @@ import reservationImg from '../../images/reservationImg.jpeg';
 import glamorous from 'glamorous';
 import Footer from '../Footer/Footer';
 import ResInfo from './ResInfo';
-import { PageHeader,
-         Content,
-         TextContainer,
-         PageLayerBase,
+import { PageLayerBase,
          PageLayerBack,
          PageHeaderImg,
-         ResHeader,
         } from '../../styles/style-index';
 
 

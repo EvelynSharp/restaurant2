@@ -1,8 +1,5 @@
 import React from 'react';
-import { PageHeader,
-         Content,
-         TextContainer,
-        } from '../../styles/style-index';
+import { PageHeader } from '../../styles/style-index';
 import Photo from './Photo';
 import galleryphotos from './galleryphotos';
 import { Grid } from 'semantic-ui-react';

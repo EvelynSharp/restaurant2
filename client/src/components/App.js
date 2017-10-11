@@ -8,7 +8,7 @@ import Home from './Home/Home';
 import Restaurant from './Restaurant/Restaurant';
 import Reservation from './Reservation/Reservation';
 import Contact from './Contact/Contact';
-import ProtectedRoute from './ProtectedRoute';
+// import ProtectedRoute from './ProtectedRoute';
 import { Switch, Route } from 'react-router-dom';
 import FetchUser from './FetchUser';
 import glamorous from 'glamorous';
@@ -23,7 +23,7 @@ const Parallax = glamorous.div({
 })
 
 class App extends Component {
-  
+
   render() {
     return (
       <Parallax>
