@@ -3,7 +3,7 @@ import { compose, withProps } from "recompose"
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 import { GOOGLE_API } from './keys'
 
-const KEY = process.env.GOOGLE_KEY ? process.env.GOOGLE_KEY : GOOGLE_API
+const KEY = GOOGLE_API ? GOOGLE_API : process.env.GOOGLE_KEY
 
 const RestMap = compose(
   withProps({
