@@ -1,9 +1,9 @@
 import React from 'react';
 import { compose, withProps } from "recompose"
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
-import { GOOGLE_API } from './keys'
+// import { GOOGLE_API } from './keys'
 
-const KEY = GOOGLE_API ? GOOGLE_API : process.env.GOOGLE_KEY
+const KEY = process.env.GOOGLE_KEY ? process.env.GOOGLE_KEY : 'AIzaSyDh5NSNcvbTx1YUyzheB_b91tvvCyvX1CM'
 
 const RestMap = compose(
   withProps({
@@ -16,7 +16,7 @@ const RestMap = compose(
   withGoogleMap
 )((props) =>
   <GoogleMap
-    defaultZoom={8}
+    defaultZoom={12}
     defaultCenter={{ lat: 40.747158, lng: -111.876745 }}
   >
     <Marker position={{ lat: 40.747158, lng: -111.876745 }} />
