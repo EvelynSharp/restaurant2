@@ -38,8 +38,6 @@ export const PageHeader = glamorous.div({
 })
 
 
-
-
 export const ResHeader = glamorous.div({
   fontSize: '1.5em',
   fontWeight: 'bold',
@@ -58,4 +56,18 @@ export const PageLayerBase = glamorous.div(ParallaxLayer, {
 
 export const PageLayerBack = glamorous.div(ParallaxLayer, {
  transform: 'translateZ(-0.5px) scale(1.5)',
+})
+
+export const MenuHeader = glamorous.div({
+  fontSize: '2.5em',
+  fontWeight: 'bold',
+  fontFamily: 'Domine, serif',
+  paddingTop: '15%',
+  textDecoration: 'underline'
+})
+
+export const MenuText = glamorous.div({
+  fontSize: '1.2em',
+  lineHeight: '2em',
+  fontFamily: '"Open Sans", sans-serif',
 })

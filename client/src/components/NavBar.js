@@ -12,7 +12,8 @@ const Logo = glamorous.div({
 
 class NavBar extends Component {
   render() {
-    const color = this.props.history.location.pathname === '/restaurant' ? 'black' : 'white'
+    const { pathname } = this.props.history.location;
+    const color = pathname === '/restaurant' || pathname === '/menu' ? 'black' : 'white'
     return (
       <div>
         <Menu pointing secondary fixed='top' style={{ border: 0}}>
@@ -22,6 +23,9 @@ class NavBar extends Component {
           <Menu.Menu position='right'>
             <Menu.Item name='home'>
               <NavLink to='/' style={{ color }}>HOME</NavLink>
+            </Menu.Item>
+            <Menu.Item name='menu'>
+              <NavLink to='/menu' style={{ color }}>MENU</NavLink>
             </Menu.Item>
             <Menu.Item name='restaurant'>
               <NavLink to='/restaurant' style={{ color }}>RESTAURANT</NavLink>
