@@ -71,3 +71,14 @@ export const MenuText = glamorous.div({
   lineHeight: '2em',
   fontFamily: '"Open Sans", sans-serif',
 })
+
+export const MenuOverLay = glamorous.div({
+  height: '100%',
+  background: 'rgba(255, 255, 255, 0.7)',
+  transition: 'all 1s',
+  ':hover': {
+    color: 'rgba(255, 255, 255, 0)',
+    background: 'rgba(255, 255, 255, 0)',
+    cursor: 'pointer',
+  }
+})
