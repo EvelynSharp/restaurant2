@@ -62,7 +62,7 @@ export const MenuHeader = glamorous.div({
   fontSize: '2.5em',
   fontWeight: 'bold',
   fontFamily: 'Domine, serif',
-  paddingTop: '15%',
+  paddingTop: '60px',
   textDecoration: 'underline'
 })
 

@@ -6,7 +6,7 @@ import { MenuHeader, MenuText } from '../../styles/style-index';
 const BG = glamorous.div({
   backgroundSize: 'cover',
   background:` url(${entreeImg})`,
-  height: '350px',
+  height: '100%',
 })
 
 const OverLay = glamorous.div({

@@ -12,7 +12,7 @@ const ContentText = glamorous.div( Content, {
 })
 
 const homeHeaderStyle = {
-  paddingTop: '10%',
+  paddingTop: '7%',
   color: 'white',
 }
 
