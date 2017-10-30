@@ -4,7 +4,8 @@ import { MenuHeader, MenuText } from '../../styles/style-index';
 
 const Wrapper = glamorous.div({
   background: '#FAEBE6',
-  height: '100%'
+  height: '100%',
+  width: '100%',
 })
 
 const Hours = () => (

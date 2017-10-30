@@ -48,7 +48,7 @@ const Menu = () => (
         <Grid.Column as={larMenuContainer} style={{width: '54vw'}}>
           <Entree />
         </Grid.Column>
-        <Grid.Column as={larMenuContainer} style={{width: '26vw'}}>
+        <Grid.Column as={larMenuContainer} style={{width: '26vw', background: '#FAEBE6'}}>
           <Hours />
         </Grid.Column>
       </Grid.Row>
