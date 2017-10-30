@@ -8,6 +8,7 @@ import glamorous from 'glamorous';
 import dessertImg from '../../images/dessert.jpeg';
 import drinkImg from '../../images/drink.jpg';
 import otherImg from '../../images/health.jpeg';
+import Footer from '../Footer/Footer';
 
 const MenuBorder = {
   border: '1vw solid #FAEBE6',
@@ -76,6 +77,9 @@ const Menu = ({home}) => {
     return (
       <PageLayerBase style={{ paddingTop: '270px'}}>
         {displayMenuList()}
+        <div style={{ paddingTop: '100px'}}>
+          <Footer />
+        </div>
       </PageLayerBase>
     )
   }

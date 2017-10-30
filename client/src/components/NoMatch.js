@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 class NoMatch extends Component {
   render() {
     return(
-      <Header as='h1' textAlign='center'>
+      <Header as='h1' textAlign='center' style={{ paddingTop: '270px'}}>
         Page Not Found
         <Link to='/'> Home</Link>
       </Header>
