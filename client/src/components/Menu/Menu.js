@@ -41,9 +41,9 @@ const otherMenuItems = [
   },
 ]
 
-const Menu = () => (
-  <PageLayerBase style={{ paddingTop: '270px'}}>
-    <Grid style={{ margin: '0 7vw' }} centered>
+const displayMenuList = () => {
+  return (
+    <Grid style={{ margin: '0 7vw' } } centered>
       <Grid.Row>
         <Grid.Column as={larMenuContainer} style={{width: '54vw'}}>
           <Entree />
@@ -63,7 +63,23 @@ const Menu = () => (
         }
       </Grid.Row>
     </Grid>
-  </PageLayerBase>
-)
+  )
+}
+
+const Menu = ({home}) => {
+  if(home) {
+  return (
+    <div style={{ paddingTop: '5%'}}>
+      {displayMenuList()}
+    </div>
+  )} else {
+    return (
+      <PageLayerBase style={{ paddingTop: '270px'}}>
+        {displayMenuList()}
+      </PageLayerBase>
+    )
+  }
+}
+
 
 export default Menu;
